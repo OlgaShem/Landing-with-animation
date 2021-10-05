@@ -1,0 +1,833 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url("https://fonts.googleapis.com/css?family=Titan+One");
+
+body{
+  font-family: Risque;
+	margin: 0;
+  padding: 0;
+}
+
+.fullpage {
+  min-height: 720px;
+}
+
+.container {
+	width: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-family: Roboto;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: #D02B2B;
+}
+
+.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.header-menu {
+  display: none;
+}
+
+.section {
+  height: 100%;
+}
+
+.first {
+  height: 725px;
+  background-color:#161639;
+  width: 100%;
+}
+
+.second {
+  background: url("img/christmas-1.png");
+  background-size: cover;
+  height: 725px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.third {
+  background: url("img/christmas-2-mobile.png");
+  background-size: cover;
+  height: 725px;
+  font-family: Risque;
+  width: 100%;
+  position: relative;
+}
+
+.snow-blocks{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-size:cover;
+  height: 100%;
+}
+
+.snow1{
+  background-image: url("img/snow1.png");
+  position:absolute;
+  width: 100%;
+  height:740px;
+  animation: snow1 18s linear infinite;
+}
+
+@keyframes snow1{
+  from{background-position: 0 -300px;}
+  20% {background-position: 20% -100px;}
+  to{background-position: 20% 700px;}
+}
+
+
+/* Screen 1 */
+
+
+.call {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 20px 20px 20px 0px;
+  text-decoration: none;
+  margin-left: 80px;
+  padding: 10px 40px;
+  position: absolute;
+  margin-top: 20px;
+  z-index: 200;
+}
+
+.left a:hover {
+  background: #fff;
+  color: #161639;
+}
+
+.blink-star {
+  position: absolute;
+  top: 350px;
+  left:800px;
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  animation-duration: 3s;
+
+}
+
+.blink-star2 {
+  position: absolute;
+  top: 100px;
+  left:300px;
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  animation-duration: 4s;
+}
+
+.blink-star3 {
+  position: absolute;
+  top: 300px;
+  left:600px;
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  animation-duration: 2s;
+}
+
+.blink-star4 {
+  position: absolute;
+  top: 500px;
+  left:400px;
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  animation-duration: 1.5s;
+}
+
+@keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+ 
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+.santa-main {
+display: block;
+}
+
+.santa {
+  margin-top: 190px;
+}
+
+.main-title {
+  font-size: 50px;
+  color: #fff;
+  margin: 200px 0 0 20px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #fff;
+  margin: 20px 0 0 20px;
+}
+
+.title {
+  font-size: 36px;
+  color: #fff;
+  max-width: 400px;
+  margin: 120px 0 0 20px;
+}
+
+.description {
+  color: #fff;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.anim-show {
+  display: none;
+}
+
+.left {
+  z-index: 100;
+}
+
+.right {
+  position: relative;
+  width: 60%;
+}
+
+.how {
+	position: absolute;
+	top: 60px;
+	left: 40px;
+	text-align: left;
+}
+
+@keyframes show{
+  0% {
+    opacity:0;
+    }
+  100% {
+    opacity:1;
+    }
+}
+
+.icon::after {
+  content: "\f0c9";
+}
+
+.on .icon::after {
+  content: "\00d7";
+}
+
+/*red round menu */
+
+
+.menu-container {
+  background-color: #D02B2B;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: 20px;
+  top: 20px;
+  transition: all 0.3s;
+  border-radius: 50px 0 50px 50px;
+  z-index: 2;
+}
+
+.menu-container.full-menu {
+  border-radius: 0;
+  padding: 0 !important;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.text {
+  z-index: 500 !important;
+}
+
+.full-menu .menu {
+  top: 40px;
+  right: 40px;
+}
+
+.menu {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  top: 20px;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.menu i {
+  margin-left: 20px;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.menu i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.overlay {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 100px;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.overlay.open {
+  opacity: 0.9;
+  height: 400px;
+  top: 100px;
+  visibility: visible;
+  z-index: 200;
+}
+
+.overlay.open li {
+  animation: none;
+}
+
+.overlay nav {
+  font-size: 3.2em;
+  position: absolute;
+  height: 70%;
+  top: 40%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 500;
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  font-size: 36px;
+}
+
+.overlay ul li {
+  display: block;
+  height: 20%;
+  position: relative;
+}
+
+.overlay ul li a {
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+img.snowflake {
+  display: none;
+}
+
+/*Screen 2*/
+
+.icon1 {
+  position: absolute;
+  right: 20px;
+  width: 42px;
+}
+
+.icon2 {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 50px;
+}
+
+.icon3 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+}
+
+.round {
+  position: relative;
+  height: 70px;
+  width: 40px;
+  border: 3px solid #fff;
+  background: #fff;
+  box-shadow: inset 4px 10px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  padding: 1px 18px;
+  margin-right: 10px;
+}
+
+.round:hover {
+  background: transparent;
+}
+
+.tabs {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  height: 50%;
+  width: 100%;
+  min-width: 300px;
+  transform: translate(-50%, -50%);
+}
+
+label, #slider {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 0px;
+  margin-top: 150px;
+}
+
+label:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.tabs [type=radio] {
+  display: none;
+}
+
+.flex {
+  display: block;
+}
+
+.flex-img {
+  order: 2;
+  margin-left: 35%;
+}
+
+.present-title {
+  font-size: 32px;
+  font-family: Risque;
+  text-align: center;
+  font-weight: 100;
+  margin: 0;
+}
+
+.arrow {
+  display: none;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.present-text {
+  font-size: 28px;
+  font-family: Roboto;
+  max-width: 300px;
+}
+
+.check {
+  color: #fff;
+  font-family: Roboto;
+}
+
+.checkbox {
+  background: transparent;
+}
+
+/* Screen 3*/
+
+h3 {
+  font-size: 42px;
+  font-family: Risque;
+}
+
+#slider {
+  background-color: transparent;
+  position: absolute;
+  border-bottom: 3px solid white;
+  margin: 7px 10px;
+  transition: transform 0.5s;
+  width: 130px;
+}
+
+[type=radio],#r1:checked ~ #slider {
+  transform: translate(-450px, 0px);
+}
+
+[type=radio],#r2:checked ~ #slider {
+  transform: translate(-300px, 0px);
+}
+
+[type=radio],#r3:checked ~ #slider {
+  transform: translate(-150px, 0px);
+}
+
+[type=radio]:checked + label {
+  color: white;
+}
+
+[type=radio]:checked + label + .content {
+  display: inline-block;
+}
+
+.content {
+  position: absolute;
+  min-width: 300px;
+  left: 0;
+  padding: 0;
+  border: none;
+  display: none;
+  max-width: 300px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-family: Roboto;
+  top: 270px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  color: #fff;
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  resize: vertical;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+textarea {
+  height: 70px;
+
+}
+
+textarea::placeholder {
+  color: #fff;
+}
+
+.form-block {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  top: 200px;
+}
+
+
+@media screen and (max-width: 640px) {
+  .santa {
+    max-width: 400px;
+  }
+}
+
+/* Desktop styles */
+
+@media screen and (min-width: 960px) {
+
+  .check {
+    color: #D02B2B;
+  }
+
+  .logo {
+    max-width: none;
+  }
+
+  .topnav a {
+    padding: 14px 16px;
+  }
+
+  .section {
+    height: 725px !important;
+  }
+  .main-title {
+    font-size: 72px;
+    margin: 200px 0 0 120px;
+  }
+
+  .subtitle {
+    font-size: 38px;
+    margin: 50px 0 0 100px;
+  }
+
+  .santa-main {
+    display: flex;
+  }
+
+  .snow-blocks {
+    height: 725px;
+  }
+
+  .santa {
+    max-width: none;
+    margin-top: 145px;
+    margin-left: 35px;;
+  }
+
+  .arrow {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 640px;
+    height: 30px;
+  }
+
+  .call {
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+
+  .menu-container {
+    right: 100px;
+  }
+
+  .menu-container.full-menu {
+    width: 50%;
+  }
+
+  .description {
+    font-size: 38px;
+    margin-left: 150px;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .form-block {
+    width: 80%;
+    left: 75px;
+    top: 320px !important;
+  }
+
+  .string {
+    display: block;
+  }
+
+  .third {
+    background: url("img/christmas-2.png");
+    background-size: cover;
+  }
+
+  .flex-img {
+    margin-left: 0;
+  }
+
+  .present-text {
+    max-width: 90%;
+    margin-left: 20px;
+  }
+
+  img.snowflake {
+    display: block;
+    animation: 20s linear 0s normal none infinite running snowflake;
+    -webkit-animation: 20s linear 0s normal none infinite running snowflake;
+    width: 400px;
+    position: absolute;
+    left: -140px;
+    top: 300px;
+    z-index: -1;
+  }
+  @keyframes snowflake {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes snowflake {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .anim-show {
+    display: block;
+    position: absolute;
+    top: 260px;
+    left: 70px;
+    background-image: url("img/Ellipse.png");
+    background-repeat: no-repeat;
+    font-size: 18px;
+    height: 200px;
+    min-width: 270px;
+    margin:auto;
+    opacity:0;
+    transition: 3s;
+    animation: show 3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    color: black;
+  }
+
+  .frame-icon {
+    width: 100px;
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .round {
+    height: 140px;
+    width: 110px;
+    margin-right: 40px;
+  }
+
+  .icon1 {
+    position: absolute;
+    right: 40px;
+    width: auto;
+  }
+
+  .icon2 {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: auto;
+  }
+
+  .icon3 {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    width: auto;
+  }
+
+  label {
+    margin-top: 300px;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+  }
+
+  .content {
+    min-width: 500px;
+    left: 700px;
+    position: absolute;
+    top: 150px;
+    color: #fff;
+    background: transparent;
+    padding: 20px;
+    border: 2px solid #fff;
+    display: none;
+    border-radius: 20px;
+    font-size: 28px;
+    max-width: 350px;
+  }
+
+  .present-text {
+    max-width:none;
+    margin-left: 0;
+  }
+
+  label, #slider {
+    margin-top: 250px;
+  }
+
+  .title {
+    font-size: 56px;
+    max-width: 700px;
+    margin: 180px 0 0 100px;
+  }
+
+  .tabs {
+    min-width: 700px;
+  }
+
+  .header-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 400px;
+  }
+
+  .overlay {
+    margin-left: 250px;
+  }
+
+  .string {
+    display: flex;
+  }
+
+  .frame-icon {
+    width: 100px;
+    margin-top: 50px;
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title>Coca-cola</title>
+	<meta name="viwport" content="width=device-width">
+ 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Risque&display=swap" rel="stylesheet">
+
+ <header class="header navbar-fixed-top">
+      <div class="topnav" id="myTopnav">
+		  <a href="#"> <img src="img/logo.png" class="logo"></a>
+		  <div class="header-menu">
+			  <a href="#block1">Main</a>
+			  <a href="#block2">About</a>
+			  <a href="#block3">Products</a>
+			  <a href="#contacts">Contacts</a>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<i class="fa fa-bars"></i>
+			  </a>
+		  </div>
+	</div>
+</header>
+
+<body>
+	<div class="menu-container" id="toggle">
+		<a href="#" class="menu" ><i class="icon fa"></i><span class="text"></span></a>
+		<div class="overlay" id="overlay">
+				<ul>
+					<li ><a href="">Home</a></li>
+					<li><a href="">Tour</a></li>
+					<li><a href="">Features</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="container" id="fullpage">
+		<div class="first section" data-anchor="block1">
+			<div class="snow-blocks">
+				<div class="snow1"></div>
+				<div class="blink-star"><img src="img/star.png"></div>
+				<div class="blink-star2"><img src="img/star.png"></div>
+				<div class="blink-star3"><img src="img/star.png"></div>
+				<div class="blink-star4"><img src="img/star.png"></div>
+
+				<div class="santa-main">
+					<div class="left">
+						<p class="main-title">Main Site Title</p>
+						<p class="description">Lorem ipsum Descripsum</p>
+						<a href="#" class="call">Call to action</a>
+						<img class="snowflake" src="img/snowflake.png">
+						<img src="img/arrow.png" class="arrow">
+					</div>
+					<div class="right">
+						<div class="anim-show">
+							<p class="how">How how how !!! <br> Like it? <br>Scroll down for more !
+							</p>
+						</div>
+						<img class="santa" src="img/santa.png">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="second section" data-anchor="block2">
+			<div class="snow-blocks">
+        		<div class="snow1"></div>
+  				<p class="title">At least somewhere you can feel new year atmosphere </p>
+				<p class="subtitle">Choose your present:</p>
+				<div class='tabs'>
+					<input type='radio' id='r1' name='t' checked>
+					<label for='r1' ">
+						<div class="round">
+							<img class="icon1" src="img/present-1.png">
+						</div>
+					</label>
+					<div class='content'>
+						<div class="flex">
+							<div class="flex-img">
+								<img class="frame-icon" src="img/present-1.png">
+							</div>
+							<div>
+								<h3 class="present-title">Best sock ever</h3>
+								<p>Regular sock have no present inside Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem </p>
+							</div>
+						</div>
+					</div>
+					<input type='radio' id='r2' name='t'>
+					<label for='r2'>
+						<div class="round">
+							<img class="icon2" src="img/present-2.png">
+						</div>
+					</label>
+					<div class='content'>
+						<div class="flex">
+							<div class="flex-img">
+								<img class="frame-icon" src="img/present-2.png">
+							</div>
+							<div>
+								<h3 class="present-title">Best cap ever</h3>
+								<p>Regular cap have no present inside Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem</p>
+							</div>
+						</div>
+					</div>
+					<input type='radio' id='r3' name='t'>
+					<label for='r3'>
+						<div class="round">
+							<img class="icon3" src="img/present-3.png">
+						</div>
+					</label>
+					<div class='content'>
+						<div class="flex">
+							<div class="flex-img">
+								<img class="frame-icon" src="img/present-3.png">
+							</div>
+							<div>
+								<h3 class="present-title">Best bag ever</h3>
+								<p class="present-text">Regular bag have no present inside Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem</p>
+							</div>
+						</div>
+					</div>
+				</div>
+  			</div>
+    	</div>
+  		<div class="third section" data-anchor="block3">
+  			<div class="snow-blocks">
+				<div class="snow1"></div>
+				<p class="title">Write us</br>for real presents </p>
+  			</div>
+	  		<div class="form-block">
+		  		<form>
+			  		<div class="string">
+						<input type="text" name="firstname" placeholder="Name">
+					  	<input type="text" name="phone" placeholder="Phone">
+			  		</div>
+			  		<div class="string">
+						<input type="text" name="gender" placeholder="Boy">
+					  	<input type="text" name="lastname" placeholder="Email">
+			  		</div>
+			  		<div class="string">
+					  	<textarea id="subject" name="subject" placeholder="Your wish" ></textarea>
+				  	</div>
+					<p class="check"><input type="checkbox" class="checkbox">Want Coca-cola with present ?</p>>
+		  		</form>
+	  		</div>
+  		</div>
+	</div>
+
+<script type="text/javascript" src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="jquery.fullPage.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			anchors: ['block1', 'block2', 'block3'],
+			menu: '#menu',
+			css3: true,
+			scrollingSpeed: 2000
+		});
+	});
+
+
+	$(function () {
+		$('#toggle').click(function () {
+			$(this).toggleClass('on');
+		});
+
+	});
+</script>
+</body>
+</html>
